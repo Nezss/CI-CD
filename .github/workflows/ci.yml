@@ -1,8 +1,6 @@
 name: CI Pipeline
 
-on:
-  push:
-    branches:
+on: push: branches:
       - main
 
 jobs:
@@ -19,4 +17,4 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Run Tests
-      run: npm test
+      run: npm run wrong-test-command #kode rusak
