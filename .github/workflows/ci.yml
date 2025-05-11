@@ -17,4 +17,4 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Run Tests
-      run: npm run wrong-test-command #kode rusak
+      run: npm test
