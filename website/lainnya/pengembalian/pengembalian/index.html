@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengembalian</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Inknut Antiqua;
+            background-color: #101010;
+        }
+        #navbar-container {
+            background-color: rgb(85, 6, 6);
+            margin-bottom: 20px;
+        }
+        .navbar-brand {
+            color: white !important;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand i {
+            margin-right: 10px; /* Adjust spacing between the icon and text */
+        }
+        .fa-shopping-cart.flipped {
+            transform: scaleX(-1); /* Flip the icon horizontally */
+        }
+        .form-inline {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .form-inline .form-control {
+            flex: 1;
+            max-width: 600px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .form-inline .btn {
+            margin-left: -1px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgb(85, 6, 6);
+            color: white;
+        }
+        .row {
+            color: black;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .table th {
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+        }
+        .table td {
+            text-align: center;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 70px;
+        }
+        .action-buttons .btn {
+            margin-left: 10px;
+        }
+        .btn-white-black {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-shopping-cart flipped"></i>
+                Pengembalian
+            </a>
+        </nav>
+    </div>
+    <form class="form-inline my-4 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search...." aria-label="Search">
+        <button class="btn my-2 my-sm-0" type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>Nama Customer</th>
+                            <th>Kode Barang</th>
+                            <th>Nama Barang</th>
+                            <th>Tanggal Pengembalian</th>
+                            <th>Waktu terlambat Pengembalian</th>
+                            <th>Denda (perhari)</th>
+                            <th>Kondisi Kembali</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>0001</td>
+                            <td>Projector</td>
+                            <td>15/02/2024</td>
+                            <td>0</td>
+                            <td> - </td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Renjun</td>
+                            <td>0047</td>
+                            <td>DSLR</td>
+                            <td>15/02/2024</td>
+                            <td>0</td>
+                            <td> - </td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jaemin</td>
+                            <td>0012</td>
+                            <td>Lighting Controller</td>
+                            <td>21/02/2024</td>
+                            <td>0</td>
+                            <td> - </td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Haechan</td>
+                            <td>0031</td>
+                            <td>Speakers</td>
+                            <td>17/02/2024</td>
+                            <td>2 hari</td>
+                            <td>Rp 200.000</td>
+                            <td>Baik</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Jeno</td>
+                            <td>0025</td>
+                            <td>Recorders</td>
+                            <td>26/02/2024</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>Baik</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="btn btn-white-black">Create</button>
+            <button class="btn btn-white-black">Update</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

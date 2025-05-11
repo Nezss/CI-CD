@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+}
+.header{
+    background-color: black;
+}
+.home01{
+    background-color: rgb(88, 2, 2);
+}
+.bagian01{
+    background-color: rgb(88, 2, 2);
+}
+
+.bagian1{
+    background-color: rgb(88, 2, 2);
+}
+
+.red-box {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 130px; /* Adjust as needed */
+    padding-top: 130px;
+    background-color:rgb(88, 2, 2);
+    z-index: 0;
+}
+
+.red-box2 {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust as needed */
+    padding-top: 130px;
+    background-color:rgb(88, 2, 2);
+    z-index: 0;
+}
